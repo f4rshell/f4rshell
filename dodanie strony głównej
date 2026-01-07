@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f4rshell - Najlepsze Bonusy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            padding: 80px 0 60px;
+        }
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4.5rem;
+            background: linear-gradient(90deg, #00ffea, #00aaff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+        .emoji-row {
+            font-size: 3rem;
+            margin: 30px 0;
+            animation: float 6s ease-in-out infinite;
+        }
+        .emoji-row span {
+            display: inline-block;
+            animation: bounce 2s infinite alternate;
+            margin: 0 10px;
+        }
+        .emoji-row span:nth-child(odd) { animation-delay: 0.2s; }
+        .live {
+            font-size: 1.4rem;
+            color: #ff3366;
+            font-weight: 600;
+        }
+        .live a {
+            color: #ff3366;
+            text-decoration: none;
+            border-bottom: 2px solid #ff3366;
+        }
+
+        .offers {
+            display: grid;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .offer-card {
+            background: rgba(30, 30, 60, 0.7);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(100, 100, 255, 0.3);
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .offer-card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 20px 40px rgba(100, 100, 255, 0.4);
+            border-color: #00ffff;
+        }
+        .offer-card h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: #00ffff;
+            text-shadow: 0 0 10px rgba(0,255,255,0.5);
+        }
+        .offer-card ul {
+            list-style: none;
+            font-size: 1.2rem;
+            margin: 25px 0;
+            line-height: 1.8;
+        }
+        .offer-card ul li::before {
+            content: "✓ ";
+            color: #00ff88;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff00ff, #00ffff);
+            color: white;
+            padding: 16px 40px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 20px 0;
+            box-shadow: 0 8px 20px rgba(0,255,255,0.3);
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 30px rgba(255,0,255,0.5);
+        }
+        .code {
+            font-size: 1.3rem;
+            color: #ffff00;
+            font-weight: bold;
+            margin-top: 15px;
+            text-shadow: 0 0 10px #ffff00;
+        }
+        footer {
+            text-align: center;
+            padding: 60px 0 20px;
+            color: #888;
+            font-size: 1rem;
+        }
+        .social-links a {
+            color: #00ffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .social-links a:hover {
+            text-shadow: 0 0 10px #00ffff;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-15px); }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            .emoji-row { font-size: 2.5rem; }
+            .offer-card h2 { font-size: 1.8rem; }
+            .btn { font-size: 1.2rem; padding: 14px 30px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>f4rshell</h1>
+            <div class="emoji-row">
+                <span>♠</span>
+                <span>🍮</span>
+                <span>♣</span>
+                <span>♦</span>
+                <span>♥</span>
+                <span>₿</span>
+                <span>€</span>
+                <span>$</span>
+                <span>🔥</span>
+                <span>💎</span>
+            </div>
+            <p class="live">LIVE NOW! <a href="https://kick.com/farszell" target="_blank">kick.com/farszell</a></p>
+        </header>
+
+        <div class="offers">
+            <div class="offer-card">
+                <h2>DARMOWE 2.10zł + 10% DO WPŁATY! ♠</h2>
+                <ul>
+                    <li>Wszystkie metody płatności</li>
+                    <li>Darmowe 2.10zł na start</li>
+                    <li>10% bonus do każdej wpłaty</li>
+                    <li>Minimalna wpłata: 8.40zł</li>
+                </ul>
+                <a href="https://kick.com/farszell" target="_blank" class="btn">ZOBACZ NA KICK</a>
+                <p class="code">Kod: F4RSHELL</p>
+            </div>
+
+            <div class="offer-card">
+                <h2>DARMOWE 4zł + 20% DO WPŁATY! 🍮</h2>
+                <ul>
+                    <li>Wszystkie metody płatności</li>
+                    <li>Darmowe 4zł na start</li>
+                    <li>20% bonus do każdej wpłaty</li>
+                    <li>Minimalna wpłata: 8zł</li>
+                </ul>
+                <a href="https://youtube.com/@f4rshell" target="_blank" class="btn">ZOBACZ NA YOUTUBE</a>
+                <p class="code">Kod: F4RSHELL</p>
+            </div>
+
+            <div class="offer-card">
+                <h2>35% BONUS NA PIERWSZE 3 WYMIANY! ♦</h2>
+                <ul>
+                    <li>Wszystkie metody płatności</li>
+                    <li>35% bonus na pierwsze 3 wymiany</li>
+                    <li>Maksymalnie do 10$</li>
+                </ul>
+                <a href="https://kick.com/farszell" target="_blank" class="btn">ZOBACZ NA KICK</a>
+                <p class="code">Kod: F4RSHELL</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Dla zapytań biznesowych: kontakt@f4rshell.pl</p>
+            <div class="social-links" style="margin-top: 20px;">
+                <a href="https://kick.com/farszell" target="_blank">Kick</a> |
+                <a href="https://youtube.com/@f4rshell" target="_blank">YouTube</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
